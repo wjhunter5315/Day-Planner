@@ -7,74 +7,83 @@
     <title>Day Planner</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
   </head>
   <body onload="startTime()">
-      <div id = "clock-box">
-
-      </div>
+        <div id = "clock-box"></div>
         
-      <div id="9am" class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="9:00 A.M." aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+        <div class="input-group">
+            <input type="text" id="9am" class="form-control" placeholder="9:00 A.M." aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+            <div class="input-group-append" id="button-addon4">
+              <button id="clear-btn9" class="btn btn-outline-secondary" type="button">Clear</button>
+              <button id="submit-btn9" class="btn btn-outline-secondary" type="button">Save</button>
             </div>
         </div>
 
-        <div id="10am" class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="10:00 A.M." aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+        <div class="input-group">
+            <input type="text" class="form-control10" placeholder="10:00 A.M." aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+            <div class="input-group-append" id="button-addon4">
+              <button id="clear-btn" class="btn btn-outline-secondary" type="button">Clear</button>
+              <button id="submit-btn10" class="btn btn-outline-secondary" type="button">Save</button>
             </div>
         </div>
 
-        <div id="11am" class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="11:00 A.M." aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+        <div id="11am" class="input-group">
+            <input type="text" class="form-control11" placeholder="11:00 A.M." aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+            <div class="input-group-append" id="button-addon4">
+                <button id="clear-btn" class="btn btn-outline-secondary" type="button">Clear</button>
+                <button id="submit-btn11" class="btn btn-outline-secondary" type="button">Save</button>
             </div>
         </div>
 
-        <div id="noon" class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Noon" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+        <div id="noon" class="input-group">
+            <input type="text" class="form-control12" placeholder="12 O'clock (Noon)" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+            <div class="input-group-append" id="button-addon4">
+                <button id="clear-btn" class="btn btn-outline-secondary" type="button">Clear</button>
+                <button id="submit-btn12" class="btn btn-outline-secondary" type="button">Save</button>
             </div>
         </div>
 
-        <div id="1pm" class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="1:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+        <div id="1pm" class="input-group">
+            <input type="text" class="form-control1" placeholder="1:00 P.M." aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+            <div class="input-group-append" id="button-addon4">
+              <button id="clear-btn" class="btn btn-outline-secondary" type="button">Clear</button>
+              <button id="submit-btn1" class="btn btn-outline-secondary" type="button">Save</button>
             </div>
         </div>
 
-        <div id="2pm" class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="2:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-            </div>
-        </div>
-        
-        <div id="3pm" class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="3:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+        <div id="2pm" class="input-group">
+            <input type="text" class="form-control2" placeholder="2:00 P.M." aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+            <div class="input-group-append" id="button-addon4">
+              <button id="clear-btn" class="btn btn-outline-secondary" type="button">Clear</button>
+              <button id="submit-btn2" class="btn btn-outline-secondary" type="button">Save</button>
             </div>
         </div>
 
-        <div id="4pm" class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="4:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+        <div id="3pm" class="input-group">
+            <input type="text" class="form-control3" placeholder="3:00 P.M." aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+            <div class="input-group-append" id="button-addon4">
+              <button id="clear-btn" class="btn btn-outline-secondary" type="button">Clear</button>
+              <button id="submit-btn3" class="btn btn-outline-secondary" type="button">Save</button>
             </div>
         </div>
 
-        <div id="5pm" class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="5:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+        <div id="4pm" class="input-group">
+            <input type="text" class="form-control4" placeholder="4:00 P.M." aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+            <div class="input-group-append" id="button-addon4">
+              <button id="clear-btn" class="btn btn-outline-secondary" type="button">Clear</button>
+              <button id="submit-btn4" class="btn btn-outline-secondary" type="button">Save</button>
             </div>
         </div>
+
+        <div id="5pm" class="input-group">
+            <input type="text" class="form-control5" placeholder="5:00 P.M." aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+            <div class="input-group-append" id="button-addon4">
+              <button id="clear-btn" class="btn btn-outline-secondary" type="button">Clear</button>
+              <button id="submit-btn5" class="btn btn-outline-secondary" type="button">Save</button>
+            </div>
+        </div>
+
         
         <script src="./script.js"></script>
   </body>
