@@ -62,6 +62,7 @@ $("#submit-btn5").on("click", function() {
   var sched5 = document.querySelector(".form-control5").value;
   localStorage.setItem('todo5', sched5);
 })
-// $("#clear-btn").on("click" (function() {
-//     localStorage.removeItem()
-// })
+
+$("#clear-btn9").on("click", function() {
+    localStorage.removeItem('todo9');
+})
