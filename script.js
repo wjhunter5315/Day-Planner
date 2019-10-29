@@ -20,6 +20,10 @@ $("#submit-btn9").on("click", function() {
   var sched9 = document.querySelector("input").value;
   console.log(sched9);
   localStorage.setItem('todo9', sched9);
+  var holder9 = localStorage.getItem('todo9');
+  console.log(holder9);
+  todoArray.push(holder9);
+  console.log(todoArray);
 })
 
 $("#submit-btn10").on("click", function() {
